@@ -1,0 +1,56 @@
+.banner{
+    background-image:url("https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8aG90ZWx8ZW58MHx8MHx8&w=1000&q=80");
+background-repeat: no-repeat;
+background-size: cover;
+height: 100vmin;
+display: flex;
+flex-direction: column;
+text-align: center;
+align-items: center;
+justify-content: center;
+}
+.banner > h1{
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+
+.btn{
+    position: absolute;
+    transform: translateX(1vmax);
+    font-size: 2vmax;
+    color: rgb(255, 255, 255);
+}
+.SearchBar{
+    width: 100vw;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:transparent;
+
+}
+.Search{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.274);
+    background-color: white;
+    border: none;
+    color: rgba(0, 0, 0, 0.637);
+    padding: 1vmax 2vmax;
+    width: 50%;
+    outline: none;
+    border-radius: 0%;
+    font: 300 1.1vmax;
+    box-sizing: border-box;
+    /* height: 30%; */
+}
+.SearchBar > button{
+    color: white;
+    background-color:darkgreen;
+    cursor: pointer;
+    border: 1px solid darkgreen;
+    border-radius: 0;
+    padding: 0.8vmax;
+    transition: all 0.5s;
+    width: 10vmax;
+    font: 800 1.4vmax "Roboto";
+}

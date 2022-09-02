@@ -1,0 +1,58 @@
+.SubSignIn{
+    background-color:white;
+    border-radius:30px;
+    width:90%;
+height:80vmin;
+margin-right:auto;
+margin-left:auto;
+margin-top:10vmin;
+display:grid;
+grid-template-columns: 1fr 1fr;
+}
+
+.SubSignIn > div:first-child {
+    margin-top:6vmin;
+}
+
+.SubSignIn > div > h1 {
+    color:#2b1a66;
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom:3vmin;
+    font-size:4vmax;
+}
+
+.SubSignIn > div > img{
+    width:80%
+    
+}
+
+.SubSignIn > div > div >  input::placeholder {
+    font-size: 1.75vmax;
+    font-weight: 600;
+    color:#2b1a66;
+
+  }
+  
+  .SubSignIn > div > div > input {
+    margin: auto;
+     border-top:none;
+     border-right:none;
+     border-left:none;
+     border-bottom:1px solid black;
+     color:#2b1a66;
+    padding: 0.6vmax;
+    font-size: 1.5vmax;
+    font-weight: 600;
+  background-color:transparent
+  }
+  
+  .SubSignIn > div > div > input:focus {
+    outline: 0px solid blue;
+  }
+
+  .Redirect{
+    font-weight:600;
+    font-size: 1.4vmax;
+    cursor: pointer;
+  }
