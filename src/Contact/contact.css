@@ -1,0 +1,91 @@
+#ContactUs{
+    height:auto;
+    width:92%;
+    margin:auto;
+}
+
+
+#ContactUs > h1{
+    text-align: center;
+    font-family: cursive;
+    font-size: 3vmax;
+    border-bottom: 3px solid #101c1c;
+    width: 24vmax;
+margin: 2vmax auto 1vmax auto;
+color:#101c1c;
+}
+
+.ContactForm{
+    /* margin: 4vmax auto 1vmax auto; */
+    background-color: transparent;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+.ContactForm > div{
+    width:70%;
+margin:auto
+}
+
+.ContactForm > div > input
+{
+    width:70%;
+    padding: 1vmax 6vmax;
+    box-sizing: border-box;
+    border: 2px solid #101c1c;
+    border-radius: 4px;
+    font: 500 2.3vmax serif;
+    outline: none;
+}
+.ContactForm > div > textarea::placeholder,
+.ContactForm > div > input::placeholder
+{
+    color:#101c1c
+}
+
+.ContactForm > div > textarea{
+    min-width: 70%;
+    max-width: 100%;
+    resize: none;
+    min-height: 50%;
+    /* background-color: rgba(42, 2, 136, 0.178); */
+    padding: 1vmax 4vmax;
+    box-sizing: border-box;
+    border: 2px solid #101c1c;
+    border-radius: 4px;
+    font: 500 2.3vmax serif;
+    outline: none;
+}
+.ContactForm > div> button{
+    width: 70%;
+    /* background-color: rgba(42, 2, 136, 0.178); */
+    padding: 1vmax 4vmax;
+    padding-right: 1.23vmax;
+    box-sizing: border-box;
+    border: 2px solid #101c1c;
+    border-radius: 4px;
+    font: 500 2.2vmax cursive;
+    outline: none;
+    margin: auto;
+}
+.ContactForm > div > svg{
+    position: absolute;
+    font-size: 2.5vmax;
+    margin-top: 1.3vmax;
+    margin-left: 1.3vmax;
+    margin-bottom: 1.3vmax;
+    align-items: center;
+  color: #f5b921;
+}   
+
+@media only screen and (max-width: 600px) {
+    .ContactForm > div > input,
+    .ContactForm > div > textarea
+    {
+        width: 100%;
+    }
+    .ContactForm > div> button{
+        width: 100%;
+
+    }
+}

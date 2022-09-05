@@ -1,5 +1,7 @@
 .banner{
-    background-image:url("https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8aG90ZWx8ZW58MHx8MHx8&w=1000&q=80");
+    /* background-image:url("https://images.unsplash.com/photo-1618773928121-c32242e63f39?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8aG90ZWx8ZW58MHx8MHx8&w=1000&q=80"); */
+/* background-image: url("https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aG90ZWx8ZW58MHx8MHx8&w=1000&q=80"); */
+background-image: url("https://images.unsplash.com/photo-1611892441796-ae6af0ec2cc8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60");    
 background-repeat: no-repeat;
 background-size: cover;
 height: 100vmin;
@@ -10,47 +12,71 @@ align-items: center;
 justify-content: center;
 }
 .banner > h1{
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-family: sans-serif;
     font-weight: 600;
+    font-size: 3vmax;
+}
+
+a{
+    text-decoration: none;
 }
 
 .btn{
-    position: absolute;
-    transform: translateX(1vmax);
-    font-size: 2vmax;
-    color: rgb(255, 255, 255);
-}
-.SearchBar{
-    width: 100vw;
-    max-width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:transparent;
-
-}
-.Search{
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.274);
-    background-color: white;
-    border: none;
-    color: rgba(0, 0, 0, 0.637);
-    padding: 1vmax 2vmax;
-    width: 50%;
-    outline: none;
-    border-radius: 0%;
-    font: 300 1.1vmax;
-    box-sizing: border-box;
-    /* height: 30%; */
-}
-.SearchBar > button{
-    color: white;
-    background-color:darkgreen;
+    margin-bottom: 5vmax;
     cursor: pointer;
-    border: 1px solid darkgreen;
+    background-color: #fff;
+    border: 1px solid #fff;
+    color:#101c1c;
     border-radius: 0;
-    padding: 0.8vmax;
-    transition: all 0.5s;
-    width: 10vmax;
-    font: 800 1.4vmax "Roboto";
+padding:1.2vmax ;
+transition: all 0.5s;
+width: 12vmax;
+font: 500 1.4vmax "Roboto";
+}
+
+.btn:hover{
+    background-color: #101c1c ;
+color: #fff;
+}
+
+.perks{
+    justify-content: center;
+    display: flex;
+    margin: 2vmax auto;
+    width: 80vw;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.homeHeading{
+    text-align: center;
+    font-size: 3vmax;
+/* color: inherit  */
+}
+
+.perks_div{
+    display: flex;
+flex-direction: column;
+width: 20vmax;
+margin: 2vmax;
+transition: all 0.5s;
+padding-bottom: 0.5vmax;
+box-shadow: 2px 1px 5px 5px #c0bebe;
+background-color: #101c1c;
+text-align: center;
+color:#fff;
+}
+.perks_div:hover{
+    box-shadow: 2px 1px 5px 5px #918e8e;
+transform: translateY(-1vmax)
+}
+
+.perks_div > svg{
+    font-size: 4vmax;
+margin-right:auto;
+margin-left: auto;
+margin-top: 2vmax;
+    align-items: center; 
+    text-align: center;
 }

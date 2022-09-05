@@ -1,0 +1,25 @@
+.RoomContainer{
+justify-content: center;
+display: flex;
+margin: 2vmax auto;
+width: 80vw;
+flex-wrap: wrap;
+max-width: 100%;
+}
+
+.Room_Diplay{
+    display: flex;
+    flex-direction: column;
+    width: 20vmax;
+    margin: 2vmax;
+    transition: all 0.5s;
+    padding-bottom: 0.5vmax;
+    box-shadow: 2px 1px 5px 5px #c0bebe;
+    background-color: transparent;
+    text-align: center;
+    color:#000; 
+}
+.Room_Diplay:hover{
+    box-shadow: 2px 1px 5px 5px #918e8e;
+transform: translateY(-1vmax)
+}

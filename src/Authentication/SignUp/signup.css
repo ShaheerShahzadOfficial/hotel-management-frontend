@@ -10,10 +10,10 @@
   background-color: white;
   border-radius: 30px;
   width: 90%;
-  height: 80vmin;
+  height: 90vmin;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 10vmin;
+  /* margin-top: 10vmin; */
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -47,7 +47,18 @@
   padding: 0.6vmax;
   font-size: 1.5vmax;
   font-weight: 600;
-  background-color: transparent
+  background-color: transparent;
+  padding: 1vmax 4vmax;
+}
+
+.SubSignUp>div>div>svg{
+  position: absolute;
+  font-size: 1.6vmax;
+  margin-top: 1vmax;
+  margin-left: 1vmax;
+  margin-bottom: 1vmax;
+  align-items: center;  
+  color:#fb4c55
 }
 
 .SubSignUp>div>div>input:focus {
