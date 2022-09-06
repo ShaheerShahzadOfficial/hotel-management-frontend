@@ -76,7 +76,7 @@ export const LoadUser = () => async (dispatch) => {
 
 export const Logout = () => async (dispatch) => {
 
-    await axios.get("/user/login", {
+    await axios.get("http://localhost:4000/user/logout", {
         withCredentials: true,credentials: "include",
     }).then(() => {
         dispatch({
@@ -85,7 +85,7 @@ export const Logout = () => async (dispatch) => {
     }).catch((err) => {
         dispatch({
             type: LOGOUT_USER_FAIL,
-            payload: err.response.data.message
+            payload: err.response.data
         })
     });
 

@@ -16,8 +16,8 @@ const AddRoom = () => {
     const [RoomNo, setRoomNo] = useState("")
     const [description, setDescription] = useState("")
     const [Rent, setRent] = useState("")
-    const [category, setCategory] = useState("")
-    const [Availablity, setAvailablity] = useState("")
+    const [category, setCategory] = useState("Normal")
+    const [Availablity, setAvailablity] = useState("Available")
     const [NoOfBed, setNoOfBed] = useState("")
 
     const navigate = useNavigate()
@@ -35,12 +35,13 @@ const AddRoom = () => {
             navigate("/")
 
         }
-    }, [dispatch,]);
+    }, [dispatch,success]);
 
     const createRoomSubmitHandler = (e) => {
         e.preventDefault();
 
         dispatch(createRoom(RoomNo, NoOfBed, Rent, category, images, Availablity, description,));
+
     };
 
 
