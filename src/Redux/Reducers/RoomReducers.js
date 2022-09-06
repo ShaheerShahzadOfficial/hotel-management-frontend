@@ -1,7 +1,8 @@
 import {
     ADD_NEW_ROOM_REQUEST,
     ADD_NEW_ROOM_SUCCESS,
-    ADD_NEW_ROOM_FAIL,
+    ADD_NEW_ROOM_Fail,
+ 
     ADD_NEW_ROOM_RESET,
     GET_ALL_ROOM_REQUEST,
     GET_ALL_ROOM_SUCCESS,
@@ -27,7 +28,7 @@ export const AddRoomReducer = (state = initialState, actions) => {
                 success: true,
                 Room:actions.payload
             }
-            case ADD_NEW_ROOM_FAIL:
+            case ADD_NEW_ROOM_Fail:
                 return {
                     loading: false,
                     success: false,

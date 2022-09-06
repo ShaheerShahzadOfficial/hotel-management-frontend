@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState,useEffect } from "react"
 import "./signin.css"
 import loginSignUp from "../../Images/LoginSignUp.png"
 import { useNavigate } from "react-router-dom"
@@ -17,6 +17,12 @@ const SignIn = () => {
     const { loading, error, user } = useSelector(state => state.Auth)
 
     const history = useNavigate()
+    
+    useEffect(() => {
+        if (user) {
+            history("/")
+        }
+    }, [user,history])
 
     const dispatch = useDispatch()
 

@@ -1,0 +1,139 @@
+/* .flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+} */
+
+.createRoomForm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 3vmax;
+    justify-content: space-evenly;
+    height: 80%;
+    width: 70vh;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+.createRoomForm > div {
+    display: flex;
+    width: 100%;
+    align-items: center;
+  }
+
+  .createRoomForm > div > input,
+  .createRoomForm > div > select,
+  .createRoomForm > div > textarea {
+    padding: 1vmax 4vmax;
+    padding-right: 1vmax;
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    border-radius: 4px;
+    font: 300 1.5vmax cursive;
+    outline: none;
+  }
+  .createRoomForm > div > input::placeholder,
+  .createRoomForm > div > select::placeholder{
+color:black
+  }
+  
+  .createRoomForm > div > svg {
+    position: absolute;
+    transform: translateX(1vmax);
+    font-size: 1.6vmax;
+    color: rgb(0, 0, 0);
+  }
+
+
+  #createRoomFormFile > input::file-selector-button {
+    cursor: pointer;
+    width: 100%;
+    z-index: 2;
+    height: 5vh;
+    border: none;
+    margin: 1%;
+    font: 400 1.25vmax cursive;
+    transition: all 0.5s;
+    padding: 0 1vmax;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+  }
+  
+  #createRoomFormFile > input::file-selector-button:hover {
+    background-color: rgb(235, 235, 235);
+  }
+  #createRoomFormImage {
+    width: 100%;
+    overflow: auto;
+  }
+  
+  #createRoomFormImage > img {
+    width: 4vmax;
+    height: 4vmax;
+    margin: 0 0.5vmax;
+  }
+  #createRoomBtn {
+    border: none;
+    background-color: blue;
+    color: white;
+    font: 400 1.3vmax "Roboto";
+    width: 100%;
+    padding: 1vmax;
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.219);
+  }
+  
+  #createRoomBtn:hover {
+    background-color: darkblue;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .newProductContainer {
+      width: 75%;
+      border: none;
+      /* margin: auto; */
+      background-color: rgb(255, 255, 255);
+      /* overflow: hidden; */
+      margin-bottom: 30vmax;
+    }
+    .createRoomForm {
+      padding: 5vmax;
+      width: 100%;
+    }
+  
+    .createRoomForm > div > input,
+    .createRoomForm > div > select,
+    .createRoomForm > div > textarea {
+      padding: 2.5vmax 5vmax;
+      font: 300 1.7vmax cursive;
+    }
+  
+    .createRoomForm > div > svg {
+      font-size: 2.8vmax;
+    }
+  
+    #createRoomFormFile > img {
+      width: 8vmax;
+      border-radius: 100%;
+    }
+  
+    #createRoomFormFile > input::file-selector-button {
+      height: 7vh;
+      font: 400 1.8vmax cursive;
+    }
+  
+    #createRoomBtn {
+      font: 300 1.9vmax "Roboto";
+      padding: 2vmax;
+    }
+    #createRoomFormImage > img {
+      width: 5vmax;
+      height: 5vmax;
+    }
+  }

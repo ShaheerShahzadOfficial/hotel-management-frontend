@@ -60,18 +60,18 @@ const UserOptions = () => {
 
 
     const options = [
-        { icon: <ListAltIcon />, name: "Orders", func: order },
+        { icon: <ListAltIcon />, name: "Booking", func: order },
         { icon: <PersonIcon />, name: "Profile", func: Profile },
         { icon: <ShoppingCartIcon />, name: `MyBookings`, func: cart },
         { icon: <ExitToAppIcon />, name: "Logout", func: logout },
     ]
 
 
-    // if (user?.role === "Admin") {
-    //     options.unshift(
-    //         { icon: <DashboardIcon />, name: "DashBoard", func: DashBoard },
-    //     )
-    // }
+    if (user?.role === "Manager") {
+        options.unshift(
+            { icon: <DashboardIcon />, name: "DashBoard", func: DashBoard },
+        )
+    }
 
 
 

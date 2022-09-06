@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState,useEffect } from "react"
 import "./signup.css"
 import loginSignUp from "../../Images/LoginSignUp.png"
 import { useNavigate } from "react-router-dom"
@@ -7,7 +7,6 @@ import {useDispatch,useSelector} from "react-redux"
 import {RegisterUser} from "../../Redux/Actions/UserActions"
 import Loader from "../../loader/Loader"
 import swal from 'sweetalert';
-
 const SignUp = () => {
     const [Role, setRole] = useState("")
     const [Name, setName] = useState("")
@@ -17,9 +16,16 @@ const SignUp = () => {
     const [passwordError, setPasswordError] = useState("")
     const [NameError, setNameError] = useState("")
 
-const {loading,error} = useSelector(state=>state.Auth)
+const {loading,error,user} = useSelector(state=>state.Auth)
+const history = useNavigate()
 
-    const history = useNavigate()
+useEffect(()=>{
+if(user){
+history("/login")
+}
+},[user,history])
+
+
 
 const dispatch = useDispatch()
 
@@ -56,9 +62,9 @@ if(Role === ""){
                 if (Pass.test(Password) === true) {
                     setPasswordError("")
                     dispatch(RegisterUser(Name,Email,Password,Role))
-                    if(error?.msg === 'User Already Exist with this Name'){
+                    if(error?.msg === 'User Already Exist with this Email'){
                         swal({
-                            text: "User Already Exist with this Name",
+                            text: "User Already Exist with this Email",
                             icon: "error",
                             button: "Sorry !",
                           });
