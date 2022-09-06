@@ -50,7 +50,7 @@ color:black
 
   #createRoomFormFile > input::file-selector-button {
     cursor: pointer;
-    width: 100%;
+    width: 105%;
     z-index: 2;
     height: 5vh;
     border: none;
